@@ -21,7 +21,7 @@ export default defineConfig({
         /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
         trace: 'on',
         actionTimeout: 60_000,
-        headless: false,
+        headless: true,
         contextOptions: {
             permissions: ['clipboard-read', 'clipboard-write'],
         },
