@@ -1,5 +1,7 @@
 # Technical Assessment for QA Engineer at Ranger
 
+[![Wikipedia E2E Tests](https://github.com/Estherokafor05/ranger-wikipedia-/actions/workflows/e2e.yml/badge.svg)](https://github.com/Estherokafor05/ranger-wikipedia-/actions/workflows/e2e.yml)
+
 ## Overview
 
 In this exercise, you will work with Playwright (written in TypeScript) to create and complete three automated tests for Wikipedia.
