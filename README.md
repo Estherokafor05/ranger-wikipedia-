@@ -2,6 +2,8 @@
 
 [![Wikipedia E2E Tests](https://github.com/Estherokafor05/ranger-wikipedia-/actions/workflows/e2e.yml/badge.svg)](https://github.com/Estherokafor05/ranger-wikipedia-/actions/workflows/e2e.yml)
 
+## Loom Video [Link](https://www.loom.com/share/3f2e486901174ccba01017c85e1e498f)
+
 ## Overview
 
 In this exercise, you will work with Playwright (written in TypeScript) to create and complete three automated tests for Wikipedia.
