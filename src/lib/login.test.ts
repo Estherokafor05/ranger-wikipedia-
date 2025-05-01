@@ -23,9 +23,9 @@ test('Sign in to Wikipedia', async ({ page }) => {
     await page.goto(
         'https://en.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=Main+Page'
     );
-    // Fill in the login form
-    await page.fill('input[name="wpName"]', wikipediaUsername); // Username input
-    await page.fill('input[name="wpPassword"]', wikipediaPassword); // Password input
+
+    await page.fill('input[name="wpName"]', wikipediaUsername);
+    await page.fill('input[name="wpPassword"]', wikipediaPassword);
 
     await page.click('button[name="wploginattempt"]');
 

@@ -34,14 +34,14 @@ export async function run(page: Page, params: {}) {
     });
     await artificialIntelligenceLink.first().click();
 
-    const viewHistoryLink = page.getByRole('link', { name: /View history/i });
-    await viewHistoryLink.waitFor({ state: 'visible', timeout: 15000 });
+    const viewHistoryLink = page
+        .getByRole('link', { name: /View history/i })
+        .first();
+    await expect(viewHistoryLink).toBeVisible();
     await viewHistoryLink.click();
 
-    // Get the first user's name in the history list
     await page.waitForSelector('#pagehistory');
 
-    // Get the first user's name in the history list
     const latestEditor = await page
         .locator('#pagehistory li .history-user a')
         .first()
