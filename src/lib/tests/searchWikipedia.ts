@@ -34,9 +34,8 @@ export async function run(page: Page, params: {}) {
     });
     await artificialIntelligenceLink.first().click();
 
-    const viewHistoryLink = page.locator(
-        'li#ca-history a[title="Past revisions of this page [ctrl-option-h]"]'
-    );
+    const viewHistoryLink = page.getByRole('link', { name: /View history/i });
+    await viewHistoryLink.waitFor({ state: 'visible', timeout: 15000 });
     await viewHistoryLink.click();
 
     // Get the first user's name in the history list
